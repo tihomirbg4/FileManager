@@ -62,7 +62,7 @@ public class FileManipulatorGUI extends JFrame {
                         if (file.isValid("txt")) {
                             try {
                                 editor = new TextEditor(file.readContent());
-                                JOptionPane.showMessageDialog(rootPanel, "Successfully opened fileName: " + file.getFileName());
+                                JOptionPane.showMessageDialog(rootPanel, "Successfully opened file: " + file.getFileName());
                                 enableButtons(true);
 
                             } catch (FileNotFoundException ex) {
