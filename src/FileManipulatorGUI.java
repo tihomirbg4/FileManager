@@ -56,7 +56,7 @@ public class FileManipulatorGUI extends JFrame {
                     int returnVal = fc.showOpenDialog(FileManipulatorGUI.this);
 
                     if (returnVal == JFileChooser.APPROVE_OPTION) {
-                        String fileName = fc.getSelectedFile().getName();
+                        String fileName = fc.getSelectedFile().getAbsolutePath();
 
                         file = new FileManipulator(fileName);
                         if (file.isValid("txt")) {
